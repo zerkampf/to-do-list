@@ -1,16 +1,16 @@
 //оголошення змінних
 document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('taskInput'); // Елемент введення для нових завдань
-    const addTaskBtn = document.getElementById('addTaskBtn'); // Кнопка для додавання завдань
-    const clearAllBtn = document.getElementById('clearAllBtn'); // Кнопка для очищення всіх завдань
-    const toggleAllBtn = document.getElementById('toggleAllBtn'); // Кнопка для відмітки всіх завдань як виконані
+    const addTaskBtn = document.getElementById('addTaskBtn'); // Кнопка додавання завдань
+    const clearAllBtn = document.getElementById('clearAllBtn'); // Кнопка для видалення всіх завдань
+    const toggleAllBtn = document.getElementById('toggleAllBtn'); // Кнопка для відмітки всіх завдань як викнані
     const taskList = document.getElementById('taskList'); // Список завдань
     const weatherWidget = document.getElementById('weather-widget'); // Віджет погоди
     const listSelect = document.getElementById('listSelect'); // Вибір списку справ
     const createListBtn = document.getElementById('createListBtn'); // Кнопка для створення нового списку
     const deleteListBtn = document.getElementById('deleteListBtn'); // Кнопка для видалення вибраного списку
     const listHeader = document.createElement('div'); // Заголовок списку
-    listHeader.classList.add('list-header'); // Додаємо клас для стилізації
+    listHeader.classList.add('list-header'); //клас для стилізації
     document.querySelector('.container').insertBefore(listHeader, taskList);
 
     //додавання віджету погоди
