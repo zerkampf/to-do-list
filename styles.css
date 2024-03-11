@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-header {
+    color: #00537f;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.weather-widget {
+    float: left;
+    margin-left: -100px;
+}
+.datetime-widget {
+    margin-left: auto;
+}
+h1 {
+    color: #00537f;
+    text-align: center;
+    font-style: italic;
+}
+
+#widgets {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.widget {
+    flex-basis: 30%;
+    text-align: center;
+    margin-left: -60px;
+}
+.list-container {
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.input-container {
+    max-width: 530px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00537f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    max-width: 530px;
+    list-style-type: none;
+    padding: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+
+li {
+    color: #00537f;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
