@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     listHeader.classList.add('list-header');
     document.querySelector('.container').insertBefore(listHeader, taskList);
 
-    // Віджет погоди
+    //додавання віджету погоди
     weatherWidget.innerHTML = `
         <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=2434904&language=uk&region=UA&timeFormat=HH:mm&windUnit=mps&systemOfMeasurement=metric&temperatureUnit=celsius" 
         name="CW2" scrolling="no" width="150" height="166" frameborder="0" style="border: 1px solid #00537F; border-radius: 14px;"></iframe>
