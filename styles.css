@@ -150,3 +150,29 @@ li:last-child {
         margin: 5px;
     }
 }
+/* Створення спеціального стилю для чекбоксів */
+input[type="checkbox"] {
+    display: none; /* ховаємо оригінальний чекбокс */
+}
+
+/* Створення кастомної галочки */
+input[type="checkbox"] + label:before {
+    content: "✔"; /* Символ галочки */
+    font-size: 20px; /* Збільшуємо розмір галочки */
+    color: green; /* Зелений колір */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px; /* Вирівнюємо вертикально */
+    border: 2px solid black; /* рамка */
+    border-radius: 3px; /* закруглені кути */
+    cursor: pointer; /* зміна курсора при наведенні */
+    margin-right: 5px; /* відступ для вирівнювання з текстом */
+}
+
+/* Зміна стилю галочки при виборі */
+input[type="checkbox"]:checked + label:before {
+    background-color: green; /* змінюємо фон галочки */
+    color: white; /* змінюємо колір галочки */
+}
