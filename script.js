@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentList = lists[name];
             listHeader.textContent = `Список справ: ${name}`; // Встановлюємо заголовок списку
             listHeader.style.display = 'block'; // Відображаємо заголовок
+            listHeader.style.paddingTop = '15px';
             renderTasks();
         }
     }
