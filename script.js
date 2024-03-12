@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     renderTasks();
                 });
                 const deleteButton = document.createElement('button'); //видалення завдання
-                deleteButton.textContent = 'U+1F6AE';
+                deleteButton.textContent = '🚽';
                 deleteButton.classList.add('delete-btn'); // клас для стилізації кнопки
                 deleteButton.addEventListener('click', () => {
                     currentList.tasks.splice(index, 1);
