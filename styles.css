@@ -115,3 +115,38 @@ li:last-child {
     text-decoration: line-through;
     color: #888;
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widget {
+        margin: 10px 0;
+    }
+
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin: 5px;
+    }
+}
